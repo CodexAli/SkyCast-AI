@@ -22,8 +22,10 @@ CUSTOM_CSS = """
         color: #e2e8f0;
     }
 
-    /* Hide Streamlit Header/Footer */
-    header, footer {visibility: hidden;}
+    /* FIX: Hide only the header background/dots, NOT the whole header */
+    header {background-color: rgba(0,0,0,0) !important;}
+    footer {visibility: hidden;}
+    #MainMenu {visibility: hidden;} 
 
     /* Chat Bubbles */
     .chat-bubble {
